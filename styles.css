@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.oscuro{
+    background-color: #1f1f1f; 
+    color: #ffffff; 
+}
+
+.oscuro article{
+    border: 1px solid #303030;
+}
+
+.oscuro div.text-article h2 a{
+    color: #ffffff; 
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    box-shadow: rgba(105,106,119,0.1) 0 2px 4px;
+}
+
+.container-header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+nav ul li a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #60d16f;
+}
+
+div.btn-buttom a{
+    text-decoration: none;
+    color: #ffa420;
+    font-size: 25px;
+}
+
+.btn-oscuro{
+    color: #f1eded; 
+}
+
+div.section-container{
+    margin: 50px 0px;
+}
+
+div.section-container h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+div.container-main{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+article{
+    border: 1px solid #f1f1f1;
+    padding: 8px;
+}
+
+div.article-category{
+    background-color: #60d16f;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+div.article-category p{
+    font-size: 14px;
+    color: white;
+}
+
+div.text-article{
+    margin: 10px 0px;
+}
+
+div.text-article h2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+}
+
+div.article-font p{
+    font-size: 13px;
+}
+
+div.footer-container p{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+@media only screen and (max-width: 768px){
+    div.container-main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 580px){
+    div.container-main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    div.section-container h2{
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .container-logo h1{
+        font-size: 22px;
+    }
+    nav ul li a{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    div.section-container h2{
+        font-size: 20px;
+    }
+    div.text-article h2 a{
+        font-size: 18px;
+    }
+    div.btn-buttom a{
+        font-size: 18px;
+    }
+}
